@@ -216,7 +216,7 @@ jobs:
   #            ./.github/scripts/deploy.sh $IMAGE_NAME $TAG $EC2_HOST $EC2_USER $ENV_NAME
 
   smoke-tests:
-    needs: deploy-to-production
+    # needs: deploy-to-production
     runs-on: ubuntu-latest
     environment: production
     steps:
